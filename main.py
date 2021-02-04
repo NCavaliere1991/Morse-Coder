@@ -16,14 +16,14 @@ def make_morse(msg):
             morse_letter = morse_list[letter_position]
             cipher_text += morse_letter + " "
         elif letter == " ":
-            cipher_text += "/" + " "
+            cipher_text += "\" + " "
     return cipher_text
 
 
 def make_normal(msg):
     plain_text = ""
     for letter in msg.split():
-        if letter == "/":
+        if letter == "\":
             plain_text += " "
         if letter in morse_list:
             letter_position = morse_list.index(letter)
