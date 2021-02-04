@@ -36,6 +36,6 @@ phrase = input("Type the phrase you want encoded: ").lower()
 morse_message = make_morse(phrase)
 print(morse_message)
 
-encoded_phrase = input("Type the phrase you want decoded: ").lower()
+encoded_phrase = input("Type the phrase you want decoded: ")
 plain_message = make_normal(encoded_phrase)
 print(plain_message)
